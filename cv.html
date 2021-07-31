@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Responsive CV</title>
+        
+    </head>
+    <body onload="if(document.referrer == ''){window.location.href='login.html';}">
+        <div class="banner">
+            <div class="background">
+
+            </div>
+            <div class="header">
+                <div class="logo">
+                    <h1>My CV</h1>
+                </div>
+                <div><img src="images/sidebarIcon.png" class="open" onclick="openSide()"/></div>
+                <div class="sideBar">
+                    <img src="images/closeIcon.png" class="close" onclick="closeSide()"/>
+                    <a sideNavClick='true' href="#about">ABOUT</a>
+                    <a sideNavClick = 'true' href="#skill">SKILLS</a>
+                    <a sideNavClick = 'true' href="#experience">EXPERIENCE</a>
+                    <a sideNavClick = 'true' href="#project">PROJECTS</a>
+                    <a sideNavClick = 'true' href="#education">EDUCATION</a>
+                    <a sideNavClick = 'true' href="#contact">CONTACT</a>
+                    <a href="login.html">LOGOUT</a>
+                </div>
+
+                <div class="nav">
+                    
+                    <a href="#about">ABOUT</a>
+                    <a href="#skill">SKILLS</a>
+                    <a href="#experience">EXPERIENCE</a>
+                    <a href="#project">PROJECTS</a>
+                    <a href="#education">EDUCATION</a>
+                    <a href="#contact">CONTACT</a>
+                    <a href="login.html">LOGOUT</a>
+                </div>
+        
+            </div>
+
+            <div class="details">
+                <div class="details-text"><img src="images/photo.jpg" class="mypic"/></div>
+                <h2 class="details-text">PRIYANKA KUMARI</h2>
+                <h5 class="details-text">Full Stack Web Deverloper</h5>
+                <button class="download">Download CV</button>
+            </div>
+        </div>
+
+        <div id="about" class="about">
+            <div class="info">
+                <h2>About</h2>
+                <p style="margin-top: 5%;">A programming enthusiast who is passionate about problem solving & coding, collecting ideas ,making websites and learning new skills. I started learning coding six years back and after that I never looked back.</p>
+                <p>I am skilled in making full fledged websites and application using various technologies.</p>
+            </div>
+            <div class="info">
+                <h2>Personal Information</h2>
+                <div style="margin-top: 5%;">
+                    <ul>
+                        <li><h4 class="inlineH4">Hometown :</h4> Bokaro steel city, Jharkhand</li>
+                        <li><h4 class="inlineH4">DOB :</h4> 17/12/1997</li>
+                        <li><h4 class="inlineH4">Languages :</h4> English, Hindi</li>
+                        <li><h4 class="inlineH4">Hobbies :</h4> Coding, Singing</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        <div id="skill" class="skills">
+            <h2 class="container-head">Skills</h2>
+            
+            <div class="skills-container">
+                
+                <div class = "content-skill">
+                    <label for="java">Java</label>
+                    <progress id="java" value="85" max="100"> 85% </progress>
+                </div>
+                <div class = "content-skill">
+                    <label for="C">C</label>
+                    <progress id="C" value="75" max="100"> 75% </progress>
+                </div>
+                <div class = "content-skill">
+                    <label for="python">Python</label>
+                    <progress id="python" value="75" max="100"> 75% </progress>
+                </div>
+                <div class = "content-skill">
+                    <label for="JavaScript">JavaScript</label>
+                    <progress id="JavaScript" value="80" max="100"> 80% </progress>
+                </div>
+                <div class = "content-skill">
+                    <label for="html">HTML</label>
+                    <progress id="html" value="80" max="100"> 80% </progress>
+                </div>
+                <div class = "content-skill">
+                    <label for="CSS">CSS</label>
+                    <progress id="CSS" value="75" max="100"> 75% </progress>
+                </div>
+                <div class = "content-skill">
+                    <label for="react">React</label>
+                    <progress id="react" value="70" max="100"> 70% </progress>
+                </div>
+                <div class = "content-skill">
+                    <label for="JavaScript">MySQL</label>
+                    <progress id="html" value="80" max="100"> 80% </progress>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="experience"  class = "experience">
+            <h2 class="container-head">Experience</h2>
+            <div class="experience-container">
+                <div class="exp-content">
+                    <h3>Cognizant technology solutions</h3>
+                    <h4>(March 2021 - Present)</h4>
+                </div>
+                <div class="exp-content">
+                    <p><b>Designation - </b>Programmer Analyst trainee</p>
+                    <p><b>Role - </b>Salesforce Developer</p>
+                    <p><b>Project - </b>Medtronic-Diabetes (An e-commerce website for diabetes patients to purchase medical devices/medicines)</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id= "project" class="project-container">
+            <h2 class="container-head">Projects</h2>
+            <div class="project">
+                <h4>Student management sytem</h4>
+                <p >A full fledged website to manage student details like result, notice, fees, attendance, backlogs etc.</p>
+                <p>Tech-stacks used : HTML, CSS, Javascript, PHP, MySQL</p>
+            </div>
+            <div class="project">
+                <h4>Farmer e-commerce website</h4>
+                <p>An e-commerce website for farmers for selling and puchasing their products directly to the customers</p>
+                <p>Tech-stacks used : HTML, CSS, Javascript, PHP, MySQL</p>
+            </div>
+            <div class="project">
+                <h4>Quiz</h4>
+                <p>Tech-stacks used : HTML, CSS, Javascript</p>
+            </div>
+            <div class="project">
+                <h4>Responsive CV</h4>
+                <p>Tech-stacks used : HTML, CSS, Javascript</p>
+            </div>
+        </div>
+
+
+        <div id="education"  class = "education">
+            <h2 class="container-head">Education</h2>
+            <div class="education-container">
+                <div class="ed-content">
+                    <h3>University Institute of Technology, BURDWAN</h3>
+                    <h4>Information Technology</h4>
+                    <p>2016-2020</p>
+                    <p>84.6%</p>
+                    
+                </div>
+                <div class="ed-content">
+                    <h3>Sree Ayyappa Public School, BOKARO STEEL CITY</h3>
+                    <div class="c12-10">
+                        <div class="cls">
+                            
+                            <h4>12<sup>th</sup>Board</h4>
+                            <p>2014-2016</p>
+                            <p>86.8%</p>
+                        </div>
+                        <div class="cls">
+                            <h4>10<sup>th</sup>Board</h4>
+                            <p>2013-2014</p>
+                            <p>9.2 CGPA</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        
+
+        <div id= "footer" class="footer">
+            
+            <div class="contact">
+                
+                <div class="contact-details">
+                    <h2 align = "center">CONTACT</h2>
+                    <ul align="center">
+                        
+                        <li> priyanka504231@gmail.com</li>
+                        <li> 7667373251</li>
+                        <li> Mira road</li>
+                        <li>Mumbai, 401107</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class = "foot">
+            
+                <a href="https://www.linkedin.com/in/priyanka-kumari-623110138/"><div class="foot-content"> <img class="foot-img" src="images/linkedin.png"/></div></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=priyanka504231@gmail.com" target="_blank"><div class="foot-content"> <img class="foot-img" src="images/gmail.jpg"/></div></a>
+                <a href="https://github.com/priyanka5040?tab=repositories"><div class="foot-content"> <img class="foot-img" src="images/git.png"/></div></a>
+        
+            </div>
+        </div>
+        
+
+        <script src="script.js" type="text/javascript"></script>
+        
+    </body>
+</html>
